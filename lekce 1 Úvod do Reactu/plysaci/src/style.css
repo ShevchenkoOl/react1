@@ -1,0 +1,30 @@
+.plushies {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .plushy {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .plushy__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .plushy__name {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .plushy__text {
+    font-size: 1em;
+    color: #666;
+  }
+  

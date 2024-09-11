@@ -1,0 +1,36 @@
+.today-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+   
+  .today-separator {
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .today-day, .today-month, .today-year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .today-day {
+    color: #007bff;
+    font-weight: bold; /* Odvážný na den */
+  }
+  
+  .today-month {
+    color: #28a745;
+  }
+  
+  .today-year {
+    font-size: calc(1.2rem * 0.8); /* Zmenšit velikost písma roku o 20 % */
+    color: #dc3545;
+  }
