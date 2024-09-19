@@ -1,0 +1,53 @@
+.container {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    background-color: #264f1e;
+    color: white;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topbar__brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo,
+  .user__icon {
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+  }
+  
+  .logo {
+    background-image: url('../../../public/img/logo.svg');
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user__name {
+    margin-right: 1rem;
+  }
+  
+  .user__icon {
+    background-image: url('../../../public/img/user.svg');
+  }
+  
+  .company {
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }

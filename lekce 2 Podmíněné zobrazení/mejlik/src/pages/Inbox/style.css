@@ -1,0 +1,37 @@
+.inbox-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .inbox-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .inbox-details {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .inbox-account {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .unread {
+    font-style: italic;
+    color: #007bff;
+  }
+  
+  .no-unread {
+    font-style: italic;
+    color: #2b7e05;
+    font-weight: bold;
+  }
