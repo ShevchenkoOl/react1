@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.palette {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.palette-scheme {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 10px;
+  
+  width: 600px;
+  height: 600px;
+}
+
+.palette-scheme--horizontal {
+  flex-direction: column;
+}
+
+.palette-scheme--vertical {
+  flex-direction: row;
+}
+
+.scheme-image {
+  flex: 0 0 auto;
+}
+
+.palette-scheme--horizontal > .scheme-image {
+  width: 600px;
+  height: 400px;
+}
+
+.palette-scheme--vertical > .scheme-image {
+  width: 400px;
+  height: 600px;
+}
+
+.scheme-colors {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.palette-scheme--horizontal > .scheme-colors {
+  flex-direction: row;
+}
+
+.palette-scheme--vertical > .scheme-colors {
+  flex-direction: column;
+}
+
+.scheme-color {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.palette-info {
+  margin-left: 2rem;
+}
+
+.palette--image-left {
+  flex-direction: row; /* Изображение слева, текст справа */
+}
+
+.palette--image-right {
+  flex-direction: row-reverse; /* Изображение справа, текст слева */
+}
