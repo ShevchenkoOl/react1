@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './ukazatel-uspechu.css'
 
 /*
@@ -8,18 +9,27 @@ Zadání 4. Nastav prvku `ukazatel-uspechu__postup` šířku podle stavové prom
 */
 
 const UkazatelPokroku = ({ barva }) => {
+
+  const [progress, setProgress]=useState(0);
+  
+  const handleClick = () => {
+    setProgress(prevProgress => Math.min(prevProgress + 10, 100)); // vestavěná funkce pro zvýšení o 10, ale ne více než 100
+// if (progress < 100 ) {
+//   setProgress(progress + 10)
+// }
+}
   return (
     <div className="ukazatel-uspechu">
       <div className="ukazatel-uspechu__ramecek">
         <div
           className="ukazatel-uspechu__postup"
           style={{
-            width: '40%',
-            backgroundColor: 'red',
+            width: `${progress}%`,
+            backgroundColor: barva
           }}
         ></div>
       </div>
-      <button>postoupit o 10 %</button>
+      <button onClick={handleClick}>postoupit o 10 %</button>
     </div>
   )
 }
