@@ -1,0 +1,13 @@
+.zarovka {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zarovka__ikona {
+  margin: 10px;
+}
+
+.zarovka__tlacitko {
+  margin: 5px;
+}

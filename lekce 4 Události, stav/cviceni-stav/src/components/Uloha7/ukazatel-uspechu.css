@@ -1,0 +1,48 @@
+.ukazatel-uspechu {
+  max-width: 200px;
+  text-align: center;
+}
+
+.ukazatel-uspechu__ramecek {
+  border: 1px solid gray;
+  margin: 15px 0 5px;
+}
+
+.ukazatel-uspechu__postup {
+  position: relative;
+  overflow: hidden;
+  height: 15px;
+  transition: width 0.2s ease-out;
+}
+
+.ukazatel-uspechu__postup::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+@keyframes ukazatel-uspechu__postup__animace {
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.ukazatel-uspechu__postup::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -30px;
+  width: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: rotate(20deg);
+  animation: ukazatel-uspechu__postup__animace 5s infinite linear;
+}
