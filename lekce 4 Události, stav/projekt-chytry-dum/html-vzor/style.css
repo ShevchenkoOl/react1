@@ -1,0 +1,341 @@
+/* Google font Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600&display=swap');
+
+/* Moderní box model */
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans Mono', monospace;
+	background: #013565 url('./images/house.jpg') center/cover no-repeat ;
+}
+
+.container {
+	display: flex;
+}
+
+.header {
+	flex-shrink: 0;
+	width: 120px;
+	position: relative;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 56px;
+	line-height: 1;
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-90deg);
+	white-space: nowrap;
+	color: white;
+}
+
+
+.dashboard {
+	flex: 1 0 auto;
+	display: grid;
+	grid-template-columns: 350px 350px;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+		"lights climate"
+		"lights climate"
+		"lights blinds"
+		"lights energy";
+	gap: 10px;
+	padding: 30px;
+	background-image: linear-gradient(to top, #c4c5c7ee 0%, #dcdddfee 50%, #ebebebee 100%);
+	border-radius: 4px;
+}
+
+
+/* tlačítka */
+.button {
+	flex: 0 0 50%;
+	border: 0;
+	outline: 0;
+	padding: 10px;
+	font-size: 14px;
+	background-color: #dedede;
+	color: #888;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #c5c5c5;
+}
+
+.button--active {
+	background-color: #0099ff;
+	color: white;
+}
+
+.button--active:hover {
+	background-color: #0088ee;
+}
+
+
+
+/* světla */
+.lights {
+	grid-area: lights;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 10px;
+}
+
+
+.light {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+	border: 2px solid white;
+}
+
+.light:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	border-color: #0099ff;
+}
+
+.light:active {
+	transform: translateY(0);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+	border-color: #0099ff;
+}
+
+.light__icon {
+	margin-right: 20px;
+}
+
+.light__icon img {
+	height: 45px;
+}
+
+.light__name {
+	flex: 1;
+	font-weight: bold;
+}
+
+
+
+
+/* klimatizace */
+.climate {
+	grid-area: climate;
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transition: border-color 0.2s;
+	border: 2px solid white;
+}
+
+.climate:hover {
+	border-color: #0099ff;
+}
+
+.climate__icon {
+	/* margin-right: 20px */
+}
+
+.climate__icon img {
+	width: 40px;
+}
+
+.climate__content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.climate__temperature {
+	margin-bottom: 10px;
+	font-size: 48px;
+	line-height: 1;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+.climate__controls {
+	display: flex;
+	flex-direction: column;
+}
+
+.climate__controls button:first-child {
+	border-radius: 5px 5px 0 0;
+	border-bottom: 1px solid #bbbbbb;
+}
+
+.climate__controls button:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+
+
+
+/* žaluzie */
+.blinds {
+	grid-area: blinds;
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transition: border-color 0.2s;
+	border: 2px solid white;
+}
+
+.blinds:hover {
+	border-color: #0099ff;
+}
+
+.blinds__icon {
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.blinds__icon img {
+	height: 40px;
+}
+
+.blinds__name {
+	flex: 1;
+	padding: 10px 20px 10px 0;
+	font-weight: bold;
+}
+
+
+
+.blinds__controls {
+	display: flex;
+}
+
+.blinds__controls button:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.blinds__controls button:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+
+
+
+/* spotřeba energií */
+.energy {
+	grid-area: energy;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transition: border-color 0.2s;
+	border: 2px solid white;
+}
+
+.energy:hover {
+	border-color: #0099ff;
+}
+
+.energy__source {
+	display: flex;
+}
+
+.energy__icon {
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.energy__icon img {
+	display: block;
+	width: 25px;
+}
+
+.energy-consumption {
+	flex: 1;
+}
+
+.energy__description {
+	font-size: 14px;
+	font-weight: 300;
+	color: #666;
+}
+
+.energy__value {
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+/* detail */
+
+.detail {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #013565 url('/images/header-bg.jpg') center/cover no-repeat;
+}
+
+.detail-inner {
+	width: 400px;
+	min-height: 300px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.detail-ikona {
+	text-align: center;
+}
+
+.detail-ikona img {
+	width: 80px;
+}
+
+.detail-nazev {
+	text-align: center;
+	margin: 30px 0;
+}

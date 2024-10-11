@@ -1,0 +1,1 @@
+Tóny pochází z webu https://playxylo.com/ bez vědomí původního autora. Zaměrem není původní službě konkurovat, ale pouze procvičit práci s JavaScriptem.
