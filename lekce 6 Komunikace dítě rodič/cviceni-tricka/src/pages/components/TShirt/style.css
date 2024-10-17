@@ -1,0 +1,21 @@
+.tshirt {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+
+.tshirt__outline {
+  width: 100%;
+  height: 100%;
+}
+
+.tshirt__print {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 6rem;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}

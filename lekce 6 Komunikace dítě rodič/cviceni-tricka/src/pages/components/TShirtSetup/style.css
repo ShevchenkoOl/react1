@@ -1,0 +1,15 @@
+.tshirt-setup {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.tshirt-setup__label {
+  margin-right: 0.5rem;
+}
+
+.tshirt-setup__input {
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+}

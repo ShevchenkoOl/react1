@@ -1,0 +1,22 @@
+.products {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.product:hover {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7); 
+}
+
+.product__image {
+  width: 100%;
+  height: auto;
+}
+
+.product__body {
+  padding: 1rem;
+}

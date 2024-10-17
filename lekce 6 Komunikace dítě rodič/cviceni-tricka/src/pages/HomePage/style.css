@@ -1,0 +1,11 @@
+.tshirt-panel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.tshirt-panel__tshirt {
+  flex: 0 0 20rem;
+}
+
