@@ -1,0 +1,22 @@
+.castle {
+  display: flex;
+}
+
+.castle__image {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(./img/castle.jpg);
+  background-size: contain;
+}
+
+.castle__body {
+  margin-left: 2rem;
+}
+
+.candidate-list {
+  display: flex;
+}
+
+.candidate-list > * {
+  width: 25%;
+}
