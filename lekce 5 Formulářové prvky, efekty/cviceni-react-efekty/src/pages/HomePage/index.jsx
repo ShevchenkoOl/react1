@@ -3,6 +3,7 @@ import { Ukol2 } from "../../components/Ukol2";
 import { Ukol3 } from "../../components/Ukol3";
 import { Ukol4 } from "../../components/Ukol4";
 import { Ukol5 } from "../../components/Ukol5";
+import { Prazsky_cas } from '../../components/Prazsky_cas/Prazsky_cas'
 import "./style.css";
 
 export const HomePage = () => {
@@ -38,6 +39,12 @@ export const HomePage = () => {
           <h2>Úkol 5</h2>
           <div className="content">
             <Ukol5 />
+          </div>
+        </article>
+        <article>
+          <h2>Pražský čas</h2>
+          <div className="content">
+            <Prazsky_cas />
           </div>
         </article>
       </main>
