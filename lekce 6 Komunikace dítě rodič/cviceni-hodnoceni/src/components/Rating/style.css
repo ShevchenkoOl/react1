@@ -1,0 +1,17 @@
+.rating {
+  text-align: center;
+  width: 10rem;
+}
+
+.rating__value {
+  color: lightgray;
+
+  line-height: 6rem;
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.rating__stars {
+  display: flex;
+  justify-content: space-between;
+}

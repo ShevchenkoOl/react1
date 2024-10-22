@@ -1,0 +1,17 @@
+.rating__star {
+  width: 2rem;
+  height: 2rem;
+
+  background-image: url("img/star-white.svg");
+  background-size: contain;
+
+  cursor: pointer;
+}
+
+.rating__star:hover {
+  transform: scale(1.2);
+}
+
+.rating__star--on {
+  background-image: url("img/star-yellow.svg");
+}
