@@ -1,0 +1,16 @@
+.numpad-button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #000080;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.numpad-button:active {
+  background-color: #001f3f;
+}

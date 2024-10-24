@@ -1,0 +1,10 @@
+.bulb {
+  width: 50px;
+  height: 90px;
+  background-image: url(./img/bulb-off.png);
+  background-size: cover;
+}
+
+.bulb--on {
+  background-image: url(./img/bulb-on.png);
+}

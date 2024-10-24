@@ -1,0 +1,8 @@
+.menu-item {
+  display: block;
+  margin: 0.5rem;
+}
+
+.menu__btn:focus {
+  outline: none;
+}

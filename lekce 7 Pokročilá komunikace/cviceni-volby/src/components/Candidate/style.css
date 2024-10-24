@@ -1,0 +1,30 @@
+.candidate {
+  text-align: center;
+  padding: 1rem;
+}
+
+.candidate__name {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.candidate__avatar {
+  width: 100%;
+  height: auto;
+}
+
+.btn-vote {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #444;
+  border-radius: 5px;
+  background-color: #00ceba;
+  cursor: pointer;
+  outline: none;
+  transition: 200ms;
+}
+
+.btn-vote:hover {
+  background-color: #00b3a1;
+  transform: scale(1.1);
+}
