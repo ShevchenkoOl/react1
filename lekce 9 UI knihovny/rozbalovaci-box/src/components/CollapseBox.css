@@ -1,0 +1,28 @@
+.collapse-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .collapse-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f7f7f7;
+  }
+  
+  .collapse-box-icon {
+    font-size: 1.2em;
+    transition: transform 0.2s;
+  }
+  
+  .collapse-box-content {
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }
+  
