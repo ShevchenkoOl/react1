@@ -1,0 +1,18 @@
+.movie-container {
+    border: 1px solid lightblue;
+    padding: 1em;
+  }
+  .movie-title {
+    font-weight: bold;
+  }
+  .movie-genres {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: end;
+  }
+  .movie-genre {
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 0.2em 1em;
+  }
